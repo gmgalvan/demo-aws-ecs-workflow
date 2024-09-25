@@ -20,7 +20,7 @@ resource "aws_codepipeline" "app_pipeline" {
 
       configuration = {
         ConnectionArn    = aws_codestarconnections_connection.github.arn
-        FullRepositoryId = "your-github-username/your-repo-name"
+        FullRepositoryId = "gmgalvan/demo-aws-ecs-workflow"
         BranchName       = "main"
       }
     }
